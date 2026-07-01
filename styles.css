@@ -851,6 +851,14 @@ a {
   border: 3px solid #B1D3D6;
 }
 
+@media (max-width: 600px) {
+  .boat-photo {
+    object-fit: cover;
+    height: 65vw;
+    object-position: center 65%;
+  }
+}
+
 .boat-eyebrow {
   display: block;
   font-size: 0.72rem;
@@ -1227,6 +1235,7 @@ a {
   .schedule-grid { grid-template-columns: 1fr; }
 
   .boat-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .boat-image-col { overflow: hidden; }
 
   .carpool-layout { grid-template-columns: 1fr; }
   .cars-grid { grid-template-columns: repeat(2, 1fr); }
