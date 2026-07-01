@@ -1245,11 +1245,7 @@ a {
 
   .everyday-inner { flex-direction: column; gap: 3rem; align-items: center; }
   .everyday-img { display: none; }
-  .everyday-bg-text {
-    font-size: 20vw;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+  .everyday-bg-text { display: none; }
   .everyday-list {
     display: flex;
     flex-direction: column;
