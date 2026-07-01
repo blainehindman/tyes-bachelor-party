@@ -1,0 +1,14 @@
+{
+  "buildCommand": "node build.js",
+  "outputDirectory": ".",
+  "framework": null,
+  "headers": [
+    {
+      "source": "/shared-docs/(.*)\\.pdf",
+      "headers": [
+        { "key": "Content-Type",        "value": "application/pdf" },
+        { "key": "Content-Disposition", "value": "inline" }
+      ]
+    }
+  ]
+}
