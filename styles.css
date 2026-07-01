@@ -1244,11 +1244,12 @@ a {
   .intro { grid-template-columns: 1fr; gap: 2.5rem; }
 
   .everyday-inner { flex-direction: column; text-align: center; gap: 3rem; }
-  /* Scale bg text to viewport and lock it behind the circle only */
+  .everyday-img { display: none; }
+  /* Center bg text over the list now that circle is gone */
   .everyday-bg-text {
     font-size: 20vw;
-    top: calc(7rem + 110px);
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .schedule-grid { grid-template-columns: 1fr; }
