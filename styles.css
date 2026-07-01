@@ -1253,20 +1253,17 @@ a {
   }
   .everyday-list {
     width: 100%;
-    text-align: center;
   }
   .everyday-list ul {
-    display: inline-block;
-    text-align: left;
+    width: max-content;
+    max-width: 92%;
+    margin: 0 auto;
   }
   .everyday-list ul li {
-    display: block;
-    text-align: left;
-    border-bottom: none;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgba(65, 147, 171, 0.18);
     padding: 0.45rem 0;
-  }
-  .everyday-list ul li::before {
-    margin-right: 0.5rem;
   }
   .everyday-supertitle {
     padding-left: 0.18em;
