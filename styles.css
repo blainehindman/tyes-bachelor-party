@@ -1243,7 +1243,7 @@ a {
 
   .intro { grid-template-columns: 1fr; gap: 2.5rem; }
 
-  .everyday-inner { flex-direction: column; text-align: center; gap: 3rem; }
+  .everyday-inner { flex-direction: column; text-align: center; gap: 3rem; align-items: stretch; }
   .everyday-img { display: none; }
   /* Center bg text over the list now that circle is gone */
   .everyday-bg-text {
