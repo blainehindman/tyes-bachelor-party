@@ -1243,7 +1243,7 @@ a {
 
   .intro { grid-template-columns: 1fr; gap: 2.5rem; }
 
-  .everyday-inner { flex-direction: column; text-align: center; gap: 3rem; align-items: stretch; }
+  .everyday-inner { flex-direction: column; text-align: center; gap: 3rem; align-items: center; }
   .everyday-img { display: none; }
   /* Center bg text over the list now that circle is gone */
   .everyday-bg-text {
@@ -1251,17 +1251,25 @@ a {
     top: 50%;
     transform: translate(-50%, -50%);
   }
-  .everyday-list ul {
+  .everyday-list {
     width: 100%;
+    text-align: center;
+  }
+  .everyday-list ul {
+    display: inline-block;
+    text-align: left;
   }
   .everyday-list ul li {
-    justify-content: center;
+    display: block;
+    text-align: left;
+    border-bottom: none;
+    padding: 0.45rem 0;
   }
   .everyday-list ul li::before {
-    display: none;
+    margin-right: 0.5rem;
   }
   .everyday-supertitle {
-    padding-left: 0.18em; /* compensate letter-spacing trailing gap */
+    padding-left: 0.18em;
   }
 
   .schedule-grid { grid-template-columns: 1fr; }
