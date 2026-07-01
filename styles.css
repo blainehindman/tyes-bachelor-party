@@ -1257,6 +1257,12 @@ a {
   .everyday-list ul li {
     justify-content: center;
   }
+  .everyday-list ul li::before {
+    display: none;
+  }
+  .everyday-supertitle {
+    padding-left: 0.18em; /* compensate letter-spacing trailing gap */
+  }
 
   .schedule-grid { grid-template-columns: 1fr; }
 
