@@ -845,15 +845,26 @@ a {
   align-items: start;
 }
 
+.boat-image-col {
+  overflow: hidden;
+}
+
 .boat-photo {
   width: 100%;
   display: block;
   border: 3px solid #B1D3D6;
+  object-fit: cover;
+  object-position: center 30%;
+  will-change: object-position;
+}
+
+/* Desktop: constrain height so parallax pan is visible */
+@media (min-width: 601px) {
+  .boat-photo { height: 420px; }
 }
 
 @media (max-width: 600px) {
   .boat-photo {
-    object-fit: cover;
     height: 65vw;
     object-position: center 65%;
   }
@@ -1241,7 +1252,6 @@ a {
   .schedule-grid { grid-template-columns: 1fr; }
 
   .boat-inner { grid-template-columns: 1fr; gap: 2.5rem; }
-  .boat-image-col { overflow: hidden; }
 
   .carpool-layout { grid-template-columns: 1fr; }
   .cars-grid { grid-template-columns: repeat(2, 1fr); }

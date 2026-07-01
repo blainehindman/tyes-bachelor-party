@@ -609,6 +609,23 @@
       });
       updateCounts();
     });
+
+    // ── Boat image parallax ────────────────────────────────────────────
+    (function () {
+      var img = document.querySelector('.boat-photo');
+      if (!img) return;
+      function update() {
+        var rect = img.getBoundingClientRect();
+        var viewH = window.innerHeight;
+        var progress = (viewH - rect.top) / (viewH + rect.height);
+        var clamped = Math.max(0, Math.min(1, progress));
+        // pan from 30% (top of boat) → 70% (hull) as section scrolls through
+        var yPct = 30 + clamped * 40;
+        img.style.objectPosition = 'center ' + yPct.toFixed(1) + '%';
+      }
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    }());
   </script>
 
   <!-- ── DELETE PASSWORD MODAL ──────────────────────────────────────── -->
