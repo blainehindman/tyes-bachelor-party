@@ -609,7 +609,18 @@
       });
       updateCounts();
     });
-
+    // ── Hero background parallax ─────────────────────────────────────────
+    (function () {
+      var heroBg = document.querySelector('.hero-bg');
+      if (!heroBg) return;
+      function update() {
+        var scrollY = window.scrollY || window.pageYOffset;
+        // Background moves at 40% of scroll speed — slower = deeper parallax
+        heroBg.style.backgroundPositionY = (scrollY * 0.4) + 'px';
+      }
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    }());
     // ── Boat image parallax ────────────────────────────────────────────
     (function () {
       var img = document.querySelector('.boat-photo');
