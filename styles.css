@@ -1251,6 +1251,10 @@ a {
     top: 50%;
     transform: translate(-50%, -50%);
   }
+  .everyday-list ul {
+    width: fit-content;
+    margin: 0 auto;
+  }
 
   .schedule-grid { grid-template-columns: 1fr; }
 
