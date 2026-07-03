@@ -51,7 +51,7 @@
       <h1 class="hero-title">SHUSWAP LAKE</h1>
       <p class="hero-subtitle">Bachelor Party for Tye Thompson</p>
       <p class="hero-hosted">
-        Hosted by <strong>The Boys</strong> &nbsp;·&nbsp; <strong>13 Deep</strong>
+        Hosted by <strong>The Boys</strong> &nbsp;·&nbsp; <strong>12 Deep</strong>
       </p>
     </div>
     <div class="hero-strip">
@@ -132,10 +132,6 @@
       <div class="squad-member">
         <div class="squad-circle">JO</div>
         <span class="squad-name">Joseph</span>
-      </div>
-      <div class="squad-member">
-        <div class="squad-circle">KE</div>
-        <span class="squad-name">Keagan</span>
       </div>
       <div class="squad-member">
         <div class="squad-circle">SE</div>
@@ -331,71 +327,47 @@
   </section>
 
   <!-- ====================================================
-       CARPOOL — drag &amp; drop seat picker
+       CARPOOL — finalized assignments
   ==================================================== -->
   <section class="carpool" id="carpool">
     <div class="carpool-inner">
-      <h2 class="section-title light">Caravan With New Friends</h2>
-      <p class="carpool-sub">Drag names into the cars. It's not binding. It's just fun. </p>
-      <div class="carpool-btns">
-        <button class="carpool-action-btn" id="btn-auto">⚡ Auto-Assign</button>
-        <button class="carpool-action-btn carpool-action-btn--reset" id="btn-reset">↺ Reset</button>
-      </div>
-      <div class="carpool-layout">
-        <div class="pool-panel">
-          <h3 class="pool-title">Unassigned</h3>
-          <div class="pool-drop" id="pool-people">
-            <div class="person-chip" draggable="true" data-person="Aaron">👤 Aaron</div>
-            <div class="person-chip" draggable="true" data-person="Alden">👤 Alden</div>
-            <div class="person-chip" draggable="true" data-person="Alex">👤 Alex</div>
-            <div class="person-chip" draggable="true" data-person="Anthony">👤 Anthony</div>
-            <div class="person-chip" draggable="true" data-person="Dylan">👤 Dylan</div>
-            <div class="person-chip" draggable="true" data-person="Joseph">👤 Joseph</div>
-            <div class="person-chip" draggable="true" data-person="Keagan">👤 Keagan</div>
-            <div class="person-chip" draggable="true" data-person="Seth">👤 Seth</div>
+      <h2 class="section-title light">The Caravan</h2>
+      <p class="carpool-sub">Final car assignments for the trip to Sicamous.</p>
+      <div class="cars-grid">
+
+        <div class="car-card car-full">
+          <div class="car-header">
+            <span class="car-emoji">🚗</span>
+            <div class="car-header-text"><strong>Tye's Car</strong><span class="car-count">4 / 4</span></div>
           </div>
+          <div class="car-driver-chip">👤 Tye <em>(driver)</em></div>
+          <div class="person-chip">👤 Alex</div>
+          <div class="person-chip">👤 Aaron</div>
+          <div class="person-chip">👤 Trent</div>
         </div>
 
-        <div class="cars-grid">
-
-          <div class="car-card" data-max="2" data-base="2" id="car-blaine">
-            <div class="car-header">
-              <span class="car-emoji">🚗</span>
-              <div class="car-header-text"><strong>Blaine's Car</strong><span class="car-count">2 / 4</span></div>
-            </div>
-            <div class="car-driver-chip">👤 Blaine <em>(driver)</em></div>
-            <div class="car-driver-chip">👤 Ethan <em>(required at orientation)</em></div>
-            <div class="car-drop" data-car="blaine"><span class="car-drop-hint">Drop passengers here</span></div>
+        <div class="car-card car-full">
+          <div class="car-header">
+            <span class="car-emoji">🚗</span>
+            <div class="car-header-text"><strong>Blaine's Car</strong><span class="car-count">4 / 4</span></div>
           </div>
-
-          <div class="car-card" data-max="3" id="car-tye">
-            <div class="car-header">
-              <span class="car-emoji">🚗</span>
-              <div class="car-header-text"><strong>Tye's Car</strong><span class="car-count">1 / 4</span></div>
-            </div>
-            <div class="car-driver-chip">👤 Tye <em>(driver)</em></div>
-            <div class="car-drop" data-car="tye"><span class="car-drop-hint">Drop passengers here</span></div>
-          </div>
-
-          <div class="car-card" data-max="2" id="car-zeke">
-            <div class="car-header">
-              <span class="car-emoji">🚗</span>
-              <div class="car-header-text"><strong>Zeke's Car</strong><span class="car-count">1 / 3</span></div>
-            </div>
-            <div class="car-driver-chip">👤 Zeke <em>(driver)</em></div>
-            <div class="car-drop" data-car="zeke"><span class="car-drop-hint">Drop passengers here</span></div>
-          </div>
-
-          <div class="car-card" data-max="3" id="car-trent">
-            <div class="car-header">
-              <span class="car-emoji">🚗</span>
-              <div class="car-header-text"><strong>Trent's Car</strong><span class="car-count">1 / 4</span></div>
-            </div>
-            <div class="car-driver-chip">👤 Trent <em>(driver)</em></div>
-            <div class="car-drop" data-car="trent"><span class="car-drop-hint">Drop passengers here</span></div>
-          </div>
-
+          <div class="car-driver-chip">👤 Blaine <em>(driver)</em></div>
+          <div class="person-chip">👤 Ethan</div>
+          <div class="person-chip">👤 Alden</div>
+          <div class="person-chip">👤 Seth</div>
         </div>
+
+        <div class="car-card car-full">
+          <div class="car-header">
+            <span class="car-emoji">🚗</span>
+            <div class="car-header-text"><strong>Zeke's Car</strong><span class="car-count">4 / 4</span></div>
+          </div>
+          <div class="car-driver-chip">👤 Zeke <em>(driver)</em></div>
+          <div class="person-chip">👤 Dylan</div>
+          <div class="person-chip">👤 Joey</div>
+          <div class="person-chip">👤 Anthony</div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -423,7 +395,6 @@
             <option>Dylan</option>
             <option>Ethan</option>
             <option>Joseph</option>
-            <option>Keagan</option>
             <option>Seth</option>
             <option>Trent</option>
             <option>Tye</option>
@@ -474,150 +445,6 @@
       nav.classList.toggle('scrolled', window.scrollY > 60);
     }, { passive: true });
 
-    // Carpool drag & drop
-    let dragTarget = null;
-    document.querySelectorAll('.person-chip').forEach(chip => {
-      chip.addEventListener('dragstart', e => {
-        dragTarget = chip;
-        setTimeout(() => chip.classList.add('dragging'), 0);
-        e.dataTransfer.effectAllowed = 'move';
-      });
-      chip.addEventListener('dragend', () => {
-        chip.classList.remove('dragging');
-        dragTarget = null;
-      });
-    });
-
-    function setupDropZone(el) {
-      el.addEventListener('dragover', e => {
-        e.preventDefault();
-        el.classList.add('drag-over');
-      });
-      el.addEventListener('dragleave', e => {
-        if (!el.contains(e.relatedTarget)) el.classList.remove('drag-over');
-      });
-      el.addEventListener('drop', e => {
-        e.preventDefault();
-        el.classList.remove('drag-over');
-        if (!dragTarget) return;
-        if (el.id === 'pool-people') {
-          el.appendChild(dragTarget);
-        } else {
-          const card = el.closest('.car-card');
-          const maxP = parseInt(card.dataset.max);
-          const cur = el.querySelectorAll('.person-chip').length;
-          if (cur >= maxP) {
-            card.classList.add('car-shake');
-            setTimeout(() => card.classList.remove('car-shake'), 500);
-            return;
-          }
-          el.appendChild(dragTarget);
-        }
-        updateCounts();
-      });
-    }
-
-    setupDropZone(document.getElementById('pool-people'));
-    document.querySelectorAll('.car-drop').forEach(setupDropZone);
-
-    function updateCounts() {
-      document.querySelectorAll('.car-card').forEach(card => {
-        const p = card.querySelector('.car-drop').querySelectorAll('.person-chip').length;
-        const maxP = parseInt(card.dataset.max);
-        const base = parseInt(card.dataset.base || '1');
-        card.querySelector('.car-count').textContent = (base + p) + ' / ' + (base + maxP);
-        card.classList.toggle('car-full', p >= maxP);
-        const hint = card.querySelector('.car-drop-hint');
-        if (hint) hint.style.display = p > 0 ? 'none' : '';
-      });
-    }
-
-    // ── Touch drag & drop for mobile ──
-    var touchDragTarget = null;
-    var touchDragClone  = null;
-
-    function onChipTouchStart(e) {
-      touchDragTarget = this;
-      var touch = e.touches[0];
-      var rect  = this.getBoundingClientRect();
-      touchDragClone = this.cloneNode(true);
-      touchDragClone.style.cssText =
-        'position:fixed;left:' + rect.left + 'px;top:' + rect.top + 'px;' +
-        'width:' + rect.width + 'px;margin:0;pointer-events:none;z-index:9999;' +
-        'opacity:0.9;transform:scale(1.1);transition:none;box-shadow:0 8px 24px rgba(0,0,0,.35);';
-      document.body.appendChild(touchDragClone);
-      this.style.opacity = '0.3';
-      document.addEventListener('touchmove', onChipTouchMove, { passive: false });
-      document.addEventListener('touchend',  onChipTouchEnd,  { once: true });
-    }
-
-    function onChipTouchMove(e) {
-      if (!touchDragClone) return;
-      e.preventDefault();
-      var touch = e.touches[0];
-      touchDragClone.style.left = (touch.clientX - touchDragClone.offsetWidth  / 2) + 'px';
-      touchDragClone.style.top  = (touch.clientY - touchDragClone.offsetHeight / 2 - 12) + 'px';
-    }
-
-    function onChipTouchEnd(e) {
-      document.removeEventListener('touchmove', onChipTouchMove);
-      if (!touchDragTarget) return;
-      var touch = e.changedTouches[0];
-      if (touchDragClone) { touchDragClone.remove(); touchDragClone = null; }
-      touchDragTarget.style.opacity = '';
-      var el       = document.elementFromPoint(touch.clientX, touch.clientY);
-      var dropZone = el && el.closest('.car-drop, #pool-people');
-      if (dropZone) {
-        if (dropZone.id === 'pool-people') {
-          dropZone.appendChild(touchDragTarget);
-        } else {
-          var card = dropZone.closest('.car-card');
-          var maxP = parseInt(card.dataset.max);
-          var cur  = dropZone.querySelectorAll('.person-chip').length;
-          if (cur < maxP) {
-            dropZone.appendChild(touchDragTarget);
-          } else {
-            card.classList.add('car-shake');
-            setTimeout(function() { card.classList.remove('car-shake'); }, 500);
-          }
-        }
-        updateCounts();
-      }
-      touchDragTarget = null;
-    }
-
-    document.querySelectorAll('.person-chip').forEach(function(chip) {
-      chip.addEventListener('touchstart', onChipTouchStart, { passive: true });
-    });
-
-    // ── Auto-Assign ──
-    document.getElementById('btn-auto').addEventListener('click', function() {
-      var pool  = document.getElementById('pool-people');
-      var chips = Array.from(pool.querySelectorAll('.person-chip'));
-      // Fisher-Yates shuffle
-      for (var i = chips.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var t = chips[i]; chips[i] = chips[j]; chips[j] = t;
-      }
-      var idx = 0;
-      document.querySelectorAll('.car-drop').forEach(function(drop) {
-        var card = drop.closest('.car-card');
-        var maxP = parseInt(card.dataset.max);
-        while (idx < chips.length && drop.querySelectorAll('.person-chip').length < maxP) {
-          drop.appendChild(chips[idx++]);
-        }
-      });
-      updateCounts();
-    });
-
-    // ── Reset ──
-    document.getElementById('btn-reset').addEventListener('click', function() {
-      var pool = document.getElementById('pool-people');
-      document.querySelectorAll('.car-drop .person-chip').forEach(function(chip) {
-        pool.appendChild(chip);
-      });
-      updateCounts();
-    });
     // ── Hero background parallax ─────────────────────────────────────────
     (function () {
       var heroBg = document.querySelector('.hero-bg');
